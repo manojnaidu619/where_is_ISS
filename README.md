@@ -1,4 +1,4 @@
-# WhereIsISS
+# Wanna know Where is ISS?
 
 Ruby gem to track ISS(International Space Station)
 
