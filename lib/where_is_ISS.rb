@@ -17,12 +17,12 @@ class Iss
        puts("Currently ISS is over Water bodies(Coordinates works only on land)")
      end
 
-    def self.coordinates
+    def self.coordinates?
       puts "ISS current Latitude : #{@lat}"
       puts "ISS current Longtitude : #{@long}"
     end
 
-    def self.info                            # all the information is being retrieved from @data variable in track function
+    def self.info?                            # all the information is being retrieved from @data variable in track function
       puts "name : #{@data['name']}"
       puts "id : #{@data['id']}"
       puts "latitude : #{@data['latitude']}"

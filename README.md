@@ -32,7 +32,7 @@ Or install it yourself as:
 
 ```ruby
  require 'where_is_ISS'
- Iss.coordinates
+ Iss.coordinates?
 ```
 > ISS current Latitude : 39.217404733948
   ISS current Longitude : 70.387933714929
@@ -41,7 +41,7 @@ Or install it yourself as:
 
 ```ruby
  require 'where_is_ISS'
- Iss.info
+ Iss.info?
 ```
 > name : iss
 id : 25544
