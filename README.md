@@ -20,7 +20,40 @@ Or install it yourself as:
 
 ## Usage
 
+### To track
 
+```ruby
+$ require 'where_is_ISS'
+$ Iss.track   
+```
+> International Space Station is over Europe/Brussels
+
+### To get the coordinates
+
+```ruby
+$ require 'where_is_ISS'
+$ Iss.coordinates
+```
+> ISS current Latitude : 39.217404733948
+  ISS current Longitude : 70.387933714929
+
+### To get complete data
+
+```ruby
+$ require 'where_is_ISS'
+$ Iss.info
+```
+> name : iss
+id : 25544
+latitude : 39.217404733948
+longitude : 70.387933714929
+altitude : 409.37505604794
+velocity : 27612.529171021
+visibility : eclipsed
+timestamp : 1538331076
+Solar Latitude : -2.9915448989155
+Solar Longitude : 264.66551212567
+units : kilometers  
 
 ## Contributing
 
