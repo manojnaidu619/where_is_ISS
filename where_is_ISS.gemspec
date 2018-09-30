@@ -6,12 +6,12 @@ require "where_is_ISS/version"
 Gem::Specification.new do |spec|
   spec.name          = "where_is_ISS"
   spec.version       = WhereIsISS::VERSION
-  spec.authors       = ["TODO: Write your name"]
+  spec.authors       = ["Manoj Naidu"]
   spec.email         = ["manojnaidu619@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Tracking ISS(International Space Station)}
+  spec.description   = %q{Gives the current location of ISS(International Space Station)}
+  spec.homepage      = "https://github.com/manojnaidu619/where_is_ISS"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
