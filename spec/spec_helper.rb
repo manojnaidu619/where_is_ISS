@@ -1,5 +1,7 @@
 require "bundler/setup"
 require "where_is_ISS"
+require 'open-uri'
+require 'json'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

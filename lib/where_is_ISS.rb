@@ -10,7 +10,7 @@ class Iss
     @lat =  @data['latitude']                                                              # getting latitude from parsed response
     @long =  @data['longitude']                                                            # getting longtitude from parsed response
     response = Net::HTTP.get_response(URI.parse("https://api.wheretheiss.at/v1/coordinates/#{@lat},#{@long}"))   # Checking for 200 OK response from Server
-     if response.code == "200"
+     if (response.code).to_i == 200
        iss = JSON[open("https://api.wheretheiss.at/v1/coordinates/#{@lat},#{@long}").read]                       # Print out data if status = 200 OK
        puts("International Space Station is over #{iss['timezone_id']}")
      else
