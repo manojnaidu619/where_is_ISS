@@ -28,9 +28,9 @@ RSpec.describe WhereIsISS do
       end
 
       it "checks for Location of ISS if response is 200 OK" do
-          response = Net::HTTP.get_response(URI.parse("https://api.wheretheiss.at/v1/satellites/25544"))
           @data = JSON[open('https://api.wheretheiss.at/v1/satellites/25544').read]
-          @iss = JSON[open("https://api.wheretheiss.at/v1/coordinates/#{@data['latitude']},#{@data['longitude']}").read]
+          response = Net::HTTP.get_response(URI.parse("https://api.wheretheiss.at/v1/coordinates/#{@lat},#{@long}"))
+          @iss = JSON[open("https://api.wheretheiss.at/v1/coordinates/#{@lat},#{@long}").read] if (response.code).to_i == 200
           expect(@data).not_to be nil
           expect(@iss['timezone_id']).not_to be_empty if (response.code).to_i == 200
       end
