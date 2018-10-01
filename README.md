@@ -2,6 +2,8 @@
 
 Ruby gem to track ISS(International Space Station)
 
+[![Build Status](https://travis-ci.org/manojnaidu619/where_is_ISS.svg?branch=master)](https://travis-ci.org/manojnaidu619/where_is_ISS)
+
 ## Installation
 
 Add this line to your application's Gemfile:
