@@ -36,7 +36,7 @@ RSpec.describe WhereIsISS do
       end
     end
 
-    context "Data incomplete test" do
+    context "Response data type check" do
 
         it "checks for non-empty response" do
           @data = JSON[open('https://api.wheretheiss.at/v1/satellites/25544').read]
