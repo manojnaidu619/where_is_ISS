@@ -1,4 +1,6 @@
 require "bundler/setup"
+require 'coveralls'               # for coveralls
+Coveralls.wear!                   # for coveralls
 require "where_is_ISS"
 require 'open-uri'
 require 'json'
