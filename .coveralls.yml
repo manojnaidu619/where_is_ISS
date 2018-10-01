@@ -1,2 +1,2 @@
-service-name: travis-ci
-repo_token: COVERALLS_GEM
+service_name: travis-ci
+repo_token: coveralls_repo_key
