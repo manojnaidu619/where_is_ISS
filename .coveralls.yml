@@ -1,1 +1,2 @@
 service-name: travis-ci
+repo_token: COVERALLS_GEM
