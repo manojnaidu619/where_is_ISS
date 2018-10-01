@@ -47,6 +47,9 @@ RSpec.describe WhereIsISS do
           expect(@data['velocity']).to be_a(Float)
           expect(@data['visibility']).to be_a(String)
           expect(@data['timestamp']).to be_a(Integer)
+          expect(@data['solar_lat']).to be_a(Float)
+          expect(@data['solar_lon']).to be_a(Float)
+          expect(@data['units']).to be_a(String)
         end
 
     end
