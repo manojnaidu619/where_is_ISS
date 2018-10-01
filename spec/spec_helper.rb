@@ -1,9 +1,10 @@
 require "bundler/setup"
+require 'open-uri'
+require 'json'
+
 require 'coveralls'               # for coveralls
 Coveralls.wear!                   # for coveralls
 require "where_is_ISS"
-require 'open-uri'
-require 'json'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
