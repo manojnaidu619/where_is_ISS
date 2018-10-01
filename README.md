@@ -5,6 +5,7 @@ Ruby gem to track ISS(International Space Station)
 [![Build Status](https://travis-ci.org/manojnaidu619/where_is_ISS.svg?branch=master)](https://travis-ci.org/manojnaidu619/where_is_ISS)
 [![Coverage Status](https://coveralls.io/repos/github/manojnaidu619/where_is_ISS/badge.svg?branch=master)](https://coveralls.io/github/manojnaidu619/where_is_ISS?branch=master)
 [![Gem Version](https://badge.fury.io/rb/where_is_ISS.svg)](https://badge.fury.io/rb/where_is_ISS)
+[![codecov](https://codecov.io/gh/manojnaidu619/where_is_ISS/branch/master/graph/badge.svg)](https://codecov.io/gh/manojnaidu619/where_is_ISS)
 
 ## Installation
 
