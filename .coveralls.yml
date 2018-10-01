@@ -1,2 +1,2 @@
 service_name: travis-ci
-repo_token: coveralls_repo_key
+repo_token: COVERALLS_REPO_KEY
