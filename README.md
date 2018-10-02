@@ -37,7 +37,7 @@ Or install it yourself as:
 
 ```ruby
  require 'where_is_ISS'
- Iss.coordinates?
+ Iss.coordinates
 ```
 > [39.905690278098, 130.19768130925]
 >
@@ -47,11 +47,19 @@ Or install it yourself as:
 
 ```ruby
  require 'where_is_ISS'
- Iss.info?
+ Iss.info
 ```
 > ["iss", 25544, 33.713440406913, 139.04106708983, 408.17433114318, 27613.034267873, "eclipsed", 1538486806, -3.6899752437549, 335.64562066714, "kilometers"]
 >
 > [name, id, latitude, longitude, altitude, velocity, visibility, timestamp, solar latitude, solar longitude, units]
+
+#### list people on ISS
+
+```ruby
+ require 'where_is_ISS'
+ Iss.members
+```
+> ["Oleg Artemyev", "Andrew Feustel", "Richard Arnold", "Sergey Prokopyev", "Alexander Gerst", "Serena Aunon-Chancellor"]
 
 ## Contributing
 
