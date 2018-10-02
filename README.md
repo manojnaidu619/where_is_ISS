@@ -40,7 +40,8 @@ Or install it yourself as:
  Iss.coordinates?
 ```
 > [39.905690278098, 130.19768130925]
-
+>
+> [latitude, longitude]
 
 #### To get complete data
 
