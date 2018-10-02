@@ -31,7 +31,7 @@ Or install it yourself as:
  require 'where_is_ISS'
  Iss.track   
 ```
-> International Space Station is over Europe/Brussels
+> Europe/Brussels
 
 #### To get the coordinates
 
@@ -39,9 +39,7 @@ Or install it yourself as:
  require 'where_is_ISS'
  Iss.coordinates?
 ```
-> ISS current Latitude : 39.217404733948
->
-> ISS current Longitude : 70.387933714929
+> [39.905690278098, 130.19768130925]
 
 
 #### To get complete data
@@ -50,28 +48,9 @@ Or install it yourself as:
  require 'where_is_ISS'
  Iss.info?
 ```
-> name : iss
+> ["iss", 25544, 33.713440406913, 139.04106708983, 408.17433114318, 27613.034267873, "eclipsed", 1538486806, -3.6899752437549, 335.64562066714, "kilometers"]
 >
-> id : 25544
->
-> latitude : 39.217404733948
->
-> longitude : 70.387933714929
->
-> altitude : 409.37505604794
->
-> velocity : 27612.529171021
->
-> visibility : eclipsed
->
-> timestamp : 1538331076
->
-> Solar Latitude : -2.9915448989155
->
-> Solar Longitude : 264.66551212567
->
-> units : kilometers
-
+> [name, id, latitude, longitude, altitude, velocity, visibility, timestamp, solar latitude, solar longitude, units]
 
 ## Contributing
 
