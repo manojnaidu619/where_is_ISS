@@ -12,37 +12,30 @@ class Iss
     response = Net::HTTP.get_response(URI.parse("https://api.wheretheiss.at/v1/coordinates/#{@lat},#{@long}"))   # Checking for 200 OK response from Server
      if (response.code).to_i == 200
        iss = JSON[open("https://api.wheretheiss.at/v1/coordinates/#{@lat},#{@long}").read]                       # Print out data if status = 200 OK
-       puts("International Space Station is over #{iss['timezone_id']}")
+       p iss['timezone_id']   # put out the location
      else
        puts("Currently ISS is over Water bodies(Coordinates works only on land)")
      end
 
     def self.coordinates?
-      puts "ISS current Latitude : #{@lat}"
-      puts "ISS current Longtitude : #{@long}"
+      p @coord = [@lat, @long]   # return array of lat, long
     end
 
     def self.info?                            # all the information is being retrieved from @data variable in track function
-      puts "name : #{@data['name']}"
-      puts "id : #{@data['id']}"
-      puts "latitude : #{@data['latitude']}"
-      puts "longtitude : #{@data['longitude']}"
-      puts "altitude : #{@data['altitude']}"
-      puts "velocity : #{@data['velocity']}"
-      puts "visibility : #{@data['visibility']}"
-      puts "timestamp : #{@data['timestamp']}"
-      puts "Solar Latitude : #{@data['solar_lat']}"
-      puts "Solar Longtitude : #{@data['solar_lon']}"
-      puts "units : #{@data['units']}"
+      p  @info = [@data['name'],@data['id'],@data['latitude'],@data['longitude'],@data['altitude'],@data['velocity'],
+                  @data['visibility'],@data['timestamp'],@data['solar_lat'],@data['solar_lon'],@data['units']]
+      # return array of information
     end
    end
 
-    def self.people?
+    def self.members?
       data = JSON[open('http://api.open-notify.org/astros.json').read]
+      @members = []
       puts "#{data['number']} people on ISS"
        data['people'].each do |d|
-         puts d['name']
+           @members << d['name']
        end
+       p @members                                   # return array of members
     end
 
  end
