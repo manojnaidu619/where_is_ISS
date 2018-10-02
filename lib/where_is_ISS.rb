@@ -37,6 +37,14 @@ class Iss
     end
    end
 
+    def self.people?
+      data = JSON[open('http://api.open-notify.org/astros.json').read]
+      puts "#{data['number']} people on ISS"
+       data['people'].each do |d|
+         puts d['name']
+       end
+    end
+
  end
 
 =begin
