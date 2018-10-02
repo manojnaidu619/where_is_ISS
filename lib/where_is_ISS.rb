@@ -29,10 +29,10 @@ class Iss
    end
 
     def self.members?
-      data = JSON[open('http://api.open-notify.org/astros.json').read]
+      @data_1 = JSON[open('http://api.open-notify.org/astros.json').read]
       @members = []
-      puts "#{data['number']} people on ISS"
-       data['people'].each do |d|
+      puts "#{@data_1['number']} people on ISS"
+       @data_1['people'].each do |d|
            @members << d['name']
        end
        p @members                                   # return array of members
