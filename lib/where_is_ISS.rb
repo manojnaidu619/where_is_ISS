@@ -12,9 +12,11 @@ class Iss
     response = Net::HTTP.get_response(URI.parse("https://api.wheretheiss.at/v1/coordinates/#{@lat},#{@long}"))   # Checking for 200 OK response from Server
      if (response.code).to_i == 200
        @iss = JSON[open("https://api.wheretheiss.at/v1/coordinates/#{@lat},#{@long}").read]                       # Print out data if status = 200 OK
-       p @iss['timezone_id']   # put out the location
+       p @position = @iss['timezone_id']   # put out the location
+       return @position
      else
-       p ["Currently ISS is over Water bodies(Coordinates works only on land)"]
+       p @default = "Currently ISS is over Water bodies(Coordinates works only on land)"
+       return @default
      end
 
     def self.coordinates
