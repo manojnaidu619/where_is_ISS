@@ -8,7 +8,8 @@ Ruby gem to track ISS(International Space Station)
 [![codecov](https://codecov.io/gh/manojnaidu619/where_is_ISS/branch/master/graph/badge.svg)](https://codecov.io/gh/manojnaidu619/where_is_ISS)
 [![Gem](https://img.shields.io/gem/v/where_is_ISS.svg?style=flat)](http://rubygems.org/gems/where_is_ISS "View this project in Rubygems")
 
-[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/manojnaidu619)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/manojnaidu619/where_is_ISS/pulls) [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/manojnaidu619)
+
 
 ## Installation
 
@@ -64,15 +65,7 @@ Or install it yourself as:
 ```
 > ["Oleg Artemyev", "Andrew Feustel", "Richard Arnold", "Sergey Prokopyev", "Alexander Gerst", "Serena Aunon-Chancellor"]
 
-## Contributing
-
-Bug reports and pull requests are welcome, follow these steps to contribute to this project..
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the Branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/manojnaidu619/where_is_ISS/pulls)
 
 ## License
 
